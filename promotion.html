@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promotion</title>
+    <link rel="stylesheet" href="promotion.css">
+    <link rel="website icon" type="png" href="./Assets/logo.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+<body>
+    <!-- Header section -->
+    <header class="header">
+        <!-- Menu-Button -->
+        <div id="menu-button" class="fas fa-bars" onclick="showMenu()"></div>
+        
+        <a href="#" class="logo"> <span>wHeels</span>Hub</a>
+        
+        <nav class="navbar">
+            <!-- <ul> -->
+                <a href="home.html">Home</a>
+                <a href="ourCars.html">Cars</a>
+                <a href="promotion.html" id="promotion-text">Promotion</a>
+                <a href="home.html">Service</a>
+                <a href="aboutUs.html">About us</a>
+                <a href="register.html">Register</a>
+            <!-- </ul> -->
+        </nav>            
+        
+        <div id="register-btn">
+            <button class="button-login">Log in</button>
+            <i class="fa fa-user"></i>
+         </div>
+    </header>
+    
+    <!-- Register Form -->
+    <div class="register-form-container">
+        <!-- 2. Close Page -->
+        <span class="fas fa-times" id="close-register-form">
+            
+        </span>
+        
+        <!-- 1 -->
+        <form action="">
+            <h3>Log in</h3>
+            <input type="email" placeholder="Email address" class="box">
+            <input type="password" placeholder="Password" class="box">
+            <p>forget your password <a href="#">Click Here</a></p>
+            <input type="submit" value="Log in" class="button">
+            <p>or login with</p>
+            <div class="buttons">
+                <a href="#" class="button">google</a>
+                <a href="#" class="button">facebook</a>
+            </div>
+            <p>Don't have an account?<a href="register.html" id="register">Register account</a></p>            
+        </form>
+    </div>
+
+    <main>
+        <h1>Current Promotions</h1>
+        <p>Check out our latest deals and offers. Don't miss out on these great opportunities to save on your next car purchase!</p>
+
+        <div class="promotion-slider">
+            <div class="slide" id="slide1">
+                <img src="./Assets/promotion_banner/2023_mirai.jpeg" alt="Promotion 1">
+                <div class="promo-info">
+                    <h2>Spring Sale - 20% Off!</h2>
+                    <p>Get 20% off on all SUVs this spring season. Limited time offer!</p>
+                    <button class="button-slider">Learn More</button>
+                </div>
+            </div>
+            <div class="slide" id="slide2">
+                <img src="./Assets/promotion_banner/2024_corola_hatchback.jpeg" alt="Promotion 2">
+                <div class="promo-info">
+                    <h2>Summer Clearance - Up to $5000 Off!</h2>
+                    <p>Huge discounts on selected models. Hurry, while stocks last!</p>
+                    <button class="button-slider">Learn More</button>
+                </div>
+            </div>
+            <div class="slide" id="slide3">
+                <img src="./Assets/promotion_banner/2024_corola_hybrid.jpeg" alt="Promotion 3">
+                <div class="promo-info">
+                    <h2>Fall Extravaganza - Lease Specials Starting at $199/Month!</h2>
+                    <p>Drive away in a brand new sedan with our unbeatable lease offers. Limited availability!</p>
+                    <button class="button-slider">Learn More</button>
+                </div>
+            </div>
+            <div class="slide" id="slide4">
+                <img src="./Assets/promotion_banner/2024_highlander_hybrid.jpeg" alt="Promotion 4">
+                <div class="promo-info">
+                    <h2>Winter Wonderland - 0% APR Financing!</h2>
+                    <p>Enjoy 0% APR financing for up to 60 months on all new trucks. Offer ends soon!</p>
+                    <button class="button-slider">Learn More</button>
+                </div>
+            </div>
+            <div class="slide" id="slide5">
+                <img src="./Assets/promotion_banner/2024_sienna.jpeg" alt="Promotion 5">
+                <div class="promo-info">
+                    <h2>Year-End Blowout - Trade-In Bonus Up to $2000!</h2>
+                    <p>Get an extra $2000 trade-in bonus on top of your vehicle's value. Don't miss out on this exclusive deal!</p>
+                    <button class="button-slider">Learn More</button>
+                </div>
+            </div>
+        </div>
+
+        <section class="promotions-list">
+            <h2>More Offers</h2>
+            <div class="promotion-item">
+                <img src="./Assets/promotion_banner/2023_mirai.jpeg" alt="Promotion 3">
+                <h3>Exclusive Trade-In Deal</h3>
+                <p>Get up to $3000 trade-in bonus when you upgrade to a new model.</p>
+                <button class="button-slider" id="getOfferButton">Get Offer</button>
+            </div>
+            <div class="promotion-item">
+                <img src="./Assets/promotion_banner/2024_corola_hatchback.jpeg" alt="Promotion 4">
+                <h3>Holiday Special - Free Accessories</h3>
+                <p>Receive free accessories worth $500 with every new car purchase.</p>
+                <button class="button-slider" id="detailsButton">Details</button>
+            </div>
+        </section>
+
+        <!-- Popup Structure -->
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close-btn">&times;</span>
+                <img id="popup-image" src="" alt="Car Image">
+                <h3 id="popup-title"></h3>
+                <p id="popup-description"></p>
+            </div>
+        </div>
+
+        <!-- Product Cards Section -->
+        <section class="product-cards">
+            <h2 class="title">Latest Cars</h2>
+            <div class="product-container">
+                <div class="product-card">
+                    <img src="./Assets/product card1.webp" class="image" alt="Car 1">
+                    <div class="overlay">
+                        <div class="text-middle">BUY NOW</div>
+                    </div>
+                    <h3>Daihatsu Terios</h3>
+                    <p class="price"><span>Price: </span>
+                        <span class="original-price">$288,340</span>$224,800
+                    </p>
+                    <p>8 variants</p>
+                </div>
+                <div class="product-card">
+                    <img src="./Assets/product card2.webp" class="image" alt="Car 2">
+                    <div class="overlay">
+                        <div class="text-middle">BUY NOW</div>
+                    </div>
+                    <h3>Honda WR-V</h3>
+                    <p class="price"><span>Price: </span>
+                        <span class="original-price">$325,500</span>$269,900
+                    </p>
+                    <p>4 variants</p>
+                </div>
+                <div class="product-card">
+                    <img src="./Assets/product card3.webp" class="image" alt="Car 3">
+                    <div class="overlay">
+                        <div class="text-middle">BUY NOW</div>
+                    </div>
+                    <h3>Hyundai Creta</h3>
+                    <p class="price"><span>Price: </span>$350,200</p>
+                    <p>5 variants</p>
+                </div>
+                <div class="product-card">
+                    <img src="./Assets/product card4.webp" class="image" alt="Car 4">
+                    <div class="overlay">
+                        <div class="text-middle">COMING SOON</div>
+                    </div>
+                    <h3>BYD Auto 4</h3>
+                    <p class="price"><span>Price: </span>$434,330</p>
+                    <p>1 variant</p>
+                </div>
+                <div class="product-card">
+                    <img src="./Assets/product card5.webp" class="image" alt="Car 5">
+                    <div class="overlay">
+                        <div class="text-middle">COMING SOON</div>
+                    </div>
+                    <h3>Jaguar XE</h3>
+                    <p class="price"><span>Price: </span>$791,170</p>
+                    <p>1 variant</p>
+                </div>
+                <div class="product-card">
+                    <img src="./Assets/product card6.webp" class="image" alt="Car 6">
+                    <div class="overlay">
+                        <div class="text-middle">COMING SOON</div>
+                    </div>
+                    <h3>Porsche 718</h3>
+                    <p class="price"><span>Price: </span>$2,903,000</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter-signup">
+            <h2>Stay Updated on Promotions</h2>
+            <p>Subscribe to our newsletter to receive the latest deals directly to your inbox.</p>
+            <form>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <div class="footer-container">
+        <div class="footer">
+            <div class="footer-heading footer-1">
+                <h2>Contact Us</h2>
+                <a href="#">Blog</a>
+                <a href="#">Demo</a>
+                <a href="#">Customers</a>
+                <a href="#">Investors</a>
+                <a href="#">Terms of Service</a>
+            </div>
+            <div class="footer-heading footer-2">
+                <h2>Quick Link</h2>
+                <a href="#">Home</a>
+                <a href="#">Promotion</a>
+                <a href="#">All Cars</a>
+                <a href="#">About Us</a>
+                <a href="#">Register</a>
+            </div>
+            <div class="footer-heading footer-3">
+                <h2>Social Media</h2>
+                <a href="#"><img src="./Assets/facebook.jpg" alt="" id="icon"></a>
+                <a href="#"><img src="./Assets/instagram.jpg" alt="" id="icon"></a>
+                <a href="#"><img src="./Assets/twitter.avif" alt="" id="icon"></a>
+            </div>
+            <div>
+                <h2>Join Us</h2>
+                <input type="email" placeholder="enter your email address" id="footer-email">
+                <button type="button" id="footer-email-btn">Sign Up</button>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>&copy; 2024 WheelHub. All rights reserved</p>
+        </div>
+    </div>
+</body>
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="promotion.js" defer></script> -->
+<script src="jquery-3.6.0.min.js"></script>
+<script src="main.js"></script>
+<script src="promotion.js"></script>
+<script src="script.js"></script>
+</html>

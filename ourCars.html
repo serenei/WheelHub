@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Cars</title>
+    <link rel="stylesheet" href="ourCars.css">
+    <link rel="website icon" type="png" href="./Assets/logo.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+<body>
+    <!-- Header section -->
+    <header class="header">
+        <!-- Menu-Button -->
+        <div id="menu-button" class="fas fa-bars"  onclick="showMenu()"></div>
+        
+        <a href="#" class="logo"> <span>wHeels</span>Hub</a>
+        
+        <nav class="navbar">
+            <!-- <ul> -->
+                <a href="home.html">Home</a>
+                <a href="ourCars.html" id="cars-text">Cars</a>
+                <a href="promotion.html">Promotion</a>
+                <a href="home.html">Service</a>
+                <a href="aboutUs.html">About us</a>
+                <a href="register.html">Register</a>
+            <!-- </ul> -->
+        </nav>        
+        
+        <div id="register-btn">
+            <button class="button">Log in</button>
+            <i class="fa fa-user"></i>
+        </div>
+    </header>
+    
+    <!-- Register Form -->
+    <div class="register-form-container">
+        <!-- 2. Close Page -->
+        <span class="fas fa-times" id="close-register-form"></span>
+        
+        <!-- 1 -->
+        <form action="">
+            <h3>Log in</h3>
+            <input type="email" placeholder="Email address" class="box">
+            <input type="password" placeholder="Password" class="box">
+            <p>forget your password <a href="#">Click Here</a></p>
+            <input type="submit" value="Log in" class="button">
+            <p>or login with</p>
+            <div class="buttons">
+                <a href="#" class="button">google</a>
+                <a href="#" class="button">facebook</a>
+            </div>
+            <p>Don't have an account?<a href="register.html" id="register">Register account</a></p>            
+        </form>
+    </div>
+
+   
+    <!-- All Cars !!!!!!!!!!!!!!!!-->
+
+<section class="all-cars">
+    <h1>Our<span>Luxury</span>Cars</h1>
+    <p>Indulge in the ultimate driving experience with Our Luxury Cars. Exuding elegance and sophistication, each vehicle offers unparalleled comfort, cutting-edge technology, and timeless design. Elevate your journey today.
+
+    </p>
+
+    <div class="row">
+        <div class="cars-col">
+            <img src="./Assets/car18.png" alt="">
+            <div class="layer">
+                <h3>Porsche 911</h3>
+            </div>
+        </div>
+        <div class="cars-col">
+            <img src="./Assets/car7.jpeg" alt="">
+            <div class="layer">
+                <h3>Lamborghini</h3>
+            </div>
+        </div>
+        <div class="cars-col">
+            <img src="./Assets/car6.jpeg" alt="">
+            <div class="layer">
+                <h3>Mazda</h3>
+            </div>
+        </div>
+        <div class="cars-col">
+            <img src="./Assets/car19.webp" alt="">
+            <div class="layer">
+                <h3>Aston Martini</h3>
+            </div>
+        </div>
+        <div class="cars-col">
+            <img src="./Assets/bmw.jpeg" alt="">
+            <div class="layer">
+                <h3>BMW</h3>
+            </div>
+        </div>
+        <div class="cars-col">
+            <img src="./Assets/bugatti.jpeg" alt="">
+            <div class="layer">
+                <h3>bugatti</h3>
+            </div>
+        </div>
+        <div class="cars-col">
+            <img src="./Assets/rangerover.webp" alt="">
+            <div class="layer">
+                <h3>Rangerover</h3>
+            </div>
+        </div>
+        <div class="cars-col">
+            <img src="./Assets/porsche4.webp" alt="">
+            <div class="layer">
+                <h3>Porsche</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- All Cars !!!!!!!!!!!!!!!!!!-->
+
+<section class="cars" id="cars">
+    <div class="heading">
+        <h2>Featured<span>Cars</span> </h2>
+        <p> Explore our extensive collection of vehicles, each designed to cater to different lifestyles, preferences, and needs.</p>
+    </div>      
+</section>
+<div class="cars-container">
+
+    <div class="card">
+        <img src="./Assets/a1.jpeg" alt="">
+        <p id="car-name">Ford Mustang</p>
+        <div class="detail-card">
+            <div class="detail-card2">
+                <i class='bx bx-user' id="user-icon"></i> 
+                <p>4</p>
+                <i class='bx bx-repost' id="manual-icon"></i>
+                <p>Manual</p>
+            </div>
+            <p id="price">$100.000</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="./Assets/a4.jpeg" alt="">
+        <p id="car-name">Mazda 718 Cayman S</p>
+        <div class="detail-card">
+            <div class="detail-card2">
+                <i class='bx bx-user' id="user-icon"></i> 
+                <p>4</p>
+                <i class='bx bx-repost' id="manual-icon"></i>
+                <p>Manual</p>
+            </div>
+            <p id="price">$100.000</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="./Assets/a7.jpeg" alt="">
+        <p id="car-name">Mazda 718 Cayman S</p>
+        <div class="detail-card">
+            <div class="detail-card2">
+                <i class='bx bx-user' id="user-icon"></i> 
+                <p>4</p>
+                <i class='bx bx-repost' id="manual-icon"></i>
+                <p>Manual</p>
+            </div>
+            <p id="price">$100.000</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="./Assets/a3.jpeg" alt="">
+        <p id="car-name">Mazda 718 Cayman S</p>
+        <div class="detail-card">
+            <div class="detail-card2">
+                <i class='bx bx-user' id="user-icon"></i> 
+                <p>4</p>
+                <i class='bx bx-repost' id="manual-icon"></i>
+                <p>Manual</p>
+            </div>
+            <p id="price">$100.000</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="./Assets/a5.jpeg" alt="">
+        <p id="car-name">Mclaren 540 Red</p>
+        <div class="detail-card">
+            <div class="detail-card2">
+                <i class='bx bx-user' id="user-icon"></i> 
+                <p>4</p>
+                <i class='bx bx-repost' id="manual-icon"></i>
+                <p>Manual</p>
+            </div>
+            <p id="price">$100.000</p>
+        </div>
+    </div>
+    
+    <div class="card">
+        <img src="./Assets/a2.jpeg" alt="">
+        <p id="car-name">Roll Royce Phantom</p>
+        <div class="detail-card">
+            <div class="detail-card2">
+                <i class='bx bx-user' id="user-icon"></i> 
+                <p>4</p>
+                <i class='bx bx-repost' id="manual-icon"></i>
+                <p>Manual</p>
+            </div>
+            <p id="price">$100.000</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="./Assets/a6.jpeg" alt="">
+        <p id="car-name">Roll Royce Phantom</p>
+        <div class="detail-card">
+            <div class="detail-card2">
+                <i class='bx bx-user' id="user-icon"></i> 
+                <p>4</p>
+                <i class='bx bx-repost' id="manual-icon"></i>
+                <p>Manual</p>
+            </div>
+            <p id="price">$100.000</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="./Assets/a8.jpeg" alt="">
+        <p id="car-name">Roll Royce Phantom</p>
+        <div class="detail-card">
+            <div class="detail-card2">
+                <i class='bx bx-user' id="user-icon"></i> 
+                <p>4</p>
+                <i class='bx bx-repost' id="manual-icon"></i>
+                <p>Manual</p>
+            </div>
+            <p id="price">$100.000</p>
+        </div>
+    </div>    
+
+
+    <div class="card">
+        <img src="./Assets/a1.jpeg" alt="">
+        <p id="car-name">Ford Mustang</p>
+        <div class="detail-card">
+            <div class="detail-card2">
+                <i class='bx bx-user' id="user-icon"></i> 
+                <p>4</p>
+                <i class='bx bx-repost' id="manual-icon"></i>
+                <p>Manual</p>
+            </div>
+            <p id="price">$100.000</p>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="footer-container">
+    <div class="footer">
+        <div class="footer-heading footer-1">
+            <h2>Contact Us</h2>
+            <a href="#">Blog</a>
+            <a href="#">Demo</a>
+            <a href="#">Customers</a>
+            <a href="#">Investors</a>
+            <a href="#">Terms of Service</a>
+        </div>
+        <div class="footer-heading footer-2">
+            <h2>Quick Link</h2>
+            <a href="#">Home</a>
+            <a href="#">Promotion</a>
+            <a href="#">All Cars</a>
+            <a href="#">About Us</a>
+            <a href="#">Register</a>
+        </div>
+        <div class="footer-heading footer-3">
+            <h2>Social Media</h2>
+            <a href="#"><img src="./Assets/facebook.jpg" alt="" id="icon"></a>
+            <a href="#"><img src="./Assets/instagram.jpg" alt="" id="icon"></a>
+            <a href="#"><img src="./Assets/twitter.avif" alt="" id="icon"></a>
+        </div>
+        <div>
+            <h2>Join Us</h2>
+            <input type="email" placeholder="enter your email address" id="footer-email">
+            <button type="button" id="footer-email-btn">Sign Up</button>
+        </div>
+    </div>
+    <div class="bottom-bar">
+        <p>&copy; 2024 WheelHub. All rights reserved</p>
+    </div>
+</div>
+</body>
+<script src="jquery-3.6.0.min.js"></script>
+<script src="main.js"></script>
+<script src="script.js"></script>
+</html>
+
+<!-- Referensi gambar -->
+<!-- https://images.app.goo.gl/iBuWHrg93JNPy12x6 -->
+<!-- https://images.app.goo.gl/n6ZdcFz9nzEGHGTR6 -->
+<!-- https://images.app.goo.gl/1LDC9wyJX2tXVQHB6 -->
+<!-- https://images.app.goo.gl/XFQb3rZFS7XBKKhD9 -->

@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;1,500;1,700&display=swap');
+
+:root{
+    --yellow:#f9d806;
+    --light-yellow:#ffee80;
+    --black:#130f40;
+    --light-xolor:#666;
+    --border:.16rem solid rgba(0,0,0,.1);
+    --box-shadow: 0 .5rem 1rem rgba(0,0,0, .1);
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+/* Register Page */
+.register-form-container{
+    position: fixed;
+    z-index: 1000;
+    height: 100%;
+    width: 100%;
+    background: rgba(255,255,255,.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-form-container form{
+    padding: 16px;
+    margin: 16px;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    background: white;
+    border: var(--border);
+    width: 400px;
+    height: 500px;
+}
+
+.register-form-container form label{
+    font-size: 12px;
+}
+
+.gender{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    padding: auto;
+}
+
+.gender input{
+    margin-right: 5px;
+}
+
+.gender label{
+    gap: 20px;
+}
+
+#female {
+    margin-left: 5px;
+}
+
+/* .register-form-container form .buttons{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+} */
+
+.button{
+    align-items: center;
+    font-size: 12px;
+    display: block;
+    width: 100%;
+    padding: 5px;
+    margin: px;
+    color: var(--black);
+    background: var(--light-yellow);
+}
+
+.register-form-container form h3{
+    color: var(--black);
+    font-size: 24px;
+    padding-bottom: 16px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.register-form-container form .box{
+    margin: 8px 0;
+    width: 100%;
+    text-transform: none;
+    columns: var(--black);
+    font-size: 12px;
+    padding: 4px 10px;
+    border: var(--border);
+    border-radius: 5px;
+}
+
+.register-form-container form p{
+    text-align: center;
+    font-size: 12px;
+    padding: 8px;    
+}
+
+.register-form-container form p a{
+    color: var(--yellow);
+    text-decoration: underline;
+}
+
+.register-form-container.active{
+    top: 0;
+    opacity: 1;
+}
+
+/* Close register page */
+.register-form-container #close-register-form{
+    position: absolute;
+    top: 24px; right: 32px;
+    color: var(--black);
+    cursor: pointer;
+    font-size: 20px;
+}
+

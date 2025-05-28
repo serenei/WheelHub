@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="./aboutUs.css">
+    <link rel="website icon" type="png" href="./Assets/logo.png">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+<body>
+    <!-- Header section -->
+    <header class="header">
+        <!-- Menu-Button -->
+        <div id="menu-button" class="fas fa-bars" onclick="showMenu()"></div>
+        
+        <a href="#" class="logo"> <span>wHeels</span>Hub</a>
+        
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="ourCars.html">Cars</a>
+            <a href="promotion.html">Promotion</a>
+            <a href="home.html">Service</a>
+            <a href="aboutUs.html" id="aboutUs-text">About us</a>
+            <a href="register.html">Register</a>
+        </nav>        
+        
+        <div id="register-btn">
+            <button class="button">Log in</button>
+            <i class="fa fa-user"></i>
+        </div>
+    </header>
+    
+    <!-- Register Form -->
+    <div class="register-form-container">
+        <span class="fas fa-times" id="close-register-form"></span>
+        
+        <form action="">
+            <h3>Log in</h3>
+            <input type="email" placeholder="Email address" class="box">
+            <input type="password" placeholder="Password" class="box">
+            <p>forget your password <a href="#">Click Here</a></p>
+            <input type="submit" value="Log in" class="button">
+            <p>or login with</p>
+            <div class="buttons">
+                <a href="#" class="button">google</a>
+                <a href="#" class="button">facebook</a>
+            </div>
+            <p>Don't have an account?<a href="register.html" id="register">Register account</a></p>            
+        </form>
+    </div>
+
+    <!-- About Us -->
+    <header class="page-header">
+        <h1 class="page-header__title">About <span id="us">Us</span></h1>
+    </header>
+    <section class="box block block--who-we-are">
+        <h2 class="box__title">Who We Are</h2>
+        <picture class="box__content box__content--image image box__content--float-right">
+            <div class="box__content-box__content--float-left">
+                <p>WheelHub is a pioneer in automotive retail with a strong reputation across the United States, Wheel
+                    Hub is known as the premier destination for automotive enthusiasts looking for high-quality cars and
+                    accessories. To expand its reach and provide a better shopping experience, Wheel Hub has launched a
+                    state-of-the-art website designed to redefine the way customers buy cars.</p>
+                <p>WheelHub has successfully created an online platform that is not only informative but also attractive
+                    and functional. With a focus on performance and style, the website offers a great automotive
+                    shopping experience, allowing customers to find their dream car with ease and convenience.</p>
+            </div>
+            <img src="./Assets/about_us/family_and_car.png" alt="" class="image_content">
+        </picture>
+        <section class="block block--our-vision">
+            <h3 class="block__title"><span id="vm">Our Vision</span></h3>
+            <p class="block__content">To be a global leader in automotive retail by
+                providing an innovative, high-quality and satisfying shopping experience for every customer.</p>
+            <h3 class="block__title"><span id="vm">Our Mission</span></h3>
+            <p class="block__content">To provide an exceptional automotive shopping experience by providing high-quality
+                cars and superior customer service.</p>
+        </section>
+        <section>
+            <h2 class="services">Values</h2>
+            <div class="kotak">
+                <!-- <div class="line"></div> -->
+                <div class="single-service">
+                    <div class="social"><i class="fa fa-vision"></i></div>
+                    <span></span>
+                    <h3>CUSTOMER FIRST</h3>
+                    <p>We make decisions with our customers in mind and always prioritize value to our customers over
+                        short-term results</p>
+                </div>
+                <div class="single-service">
+                    <div class="social"><i class="fa fa-mission"></i></div>
+                    <span></span>
+                    <h3>YESTERDAY’S BEST IS TODAY’S BASELINE</h3>
+                    <p>We emphasize on consistency, and systematic improvements that can be repeated and accumulated</p>
+                </div>
+                <div class="single-service">
+                    <div class="social"><i class="fa fa-service"></i></div>
+                    <span></span>
+                    <h3>DO MORE WITH LESS</h3>
+                    <p>We started with very limited resources and we take pride in delivering outsized results through
+                        smart execution and relentless innovation</p>
+                </div>
+                <div class="single-service">
+                    <div class="social"><i class="fa fa-vision"></i></div>
+                    <span></span>
+                    <h3>YOUR PROBLEM IS MY PROBLEM</h3>
+                    <p>Our team is collaborative and works cross function and business units, centered around serving
+                        our single mission</p>
+                </div>
+                <div class="single-service">
+                    <div class="social"><i class="fa fa-mission"></i></div>
+                    <span></span>
+                    <h3>THINK BIG, START SMALL</h3>
+                    <p>We are not afraid to make bold decisions and have outrageous ambitions, but we take iterative
+                        steps, experiment on every detail to optimize our investment</p>
+                </div>
+                <div class="single-service">
+                    <div class="social"><i class="fa fa-service"></i></div>
+                    <span></span>
+                    <h3>STAY GROUNDED</h3>
+                    <p>We lead with humility through considerations, gratefulness and kindness to our employees,
+                        customers and the wider community</p>
+                </div>
+            </div>
+        </section>
+        <section class="box block block--what-we-do">
+            <h2 class="box__title">Our Services</h2>
+            <picture class="box__content box__content--image image box__content--float-right">
+                <!-- <source media="(max-width: 900px)" srcset="/_nuxt/img/image-2-w900@2x.b62e502.jpg 2x, /_nuxt/img/image-2-w900.2974461.jpg">  -->
+                <img src="./Assets/about_us/car_engineer.jpeg" alt="Pelanggan yang senang dan puas di kursi depan mobil"
+                    class="image__content2">
+            </picture>
+            <div class="box__content-box__content--float-left2">
+                <p>WheelHub stocks a wide selection of high-quality cars, from elegant sedans to rugged SUVs. We ensure
+                    that every car we sell has gone through a rigorous inspection process to guarantee its quality and
+                    performance. On our website,
+                    you can find complete information regarding the specifications, features and prices of each car
+                    available. WheelHub also keeps up with the latest developments in the automotive world.</p>
+                <p>On the All Cars page, you can find a comprehensive list of the latest cars available for sale. We
+                    provide detailed information about each model, so you can make the right decision according to your
+                    needs and preferences. We always keeps up with the latest developments in the automotive world. On
+                    the All Cars page, you can find a comprehensive list of the latest cars available for sale. We
+                    provide detailed information about each model, so you can make the right decision according to your
+                    needs and preferences.</p>
+            </div>
+            <figure class="box__content box__content--image image box__content--float-left image--with-caption">
+                <picture>
+                    <!-- <source media="(max-width: 900px)" srcset="/_nuxt/img/image-3-w900@2x.a3bf0e0.jpg 2x, /_nuxt/img/image-3-w900.80ed2a5.jpg">  -->
+                    <img src="./Assets/about_us/car_engineer2.webp"
+                        alt="Founders holding CARSOME buy car signage with a car wrapped in blue ribbon in between"
+                        class="image__content2">
+                </picture>
+            </figure>
+            <div class="box__content-box__content--float-left2">
+                <p>WheelHub is always keeping up with the latest
+                developments in the automotive world. On the All Cars page, you can find a comprehensive list of the
+                latest cars available for sale. We provide detailed information about each model, so you can make the
+                right decision according to your needs and preferences.
+
+                Wheel Hub is committed to providing a great automotive shopping experience through our excellent
+                services. With an advanced and responsive website, we ensure that you can find your dream car with ease
+                and convenience. Welcome to Wheel Hub, where your journey to the perfect car begins.
+                </p>
+            </div>
+        </section>
+    </section>
+    <section class="center-across">
+        <h3 class="center-across__content1">With 80+ WheelHub centers across 50+ cities</h3>
+        <ul class="center-across__content1">
+            <li>18.000.000+ total bids</li>
+            <li>13.000+ dealers</li>
+        </ul>
+    </section>
+    <section>
+        <h2 class="block__title2">Our Journey</h2>
+        <div class="timeline">
+
+            <div class="container2 left-container">
+                <img src="./Assets/pngtree-circle-clipart-yellow-circle-png-image_2381940.jpg" id="circle">
+                <div class="text-box">
+                    <h3>1995 - 2000</h3>
+                    <p>WheelHub was founded in 1995 with a vision to become a pioneer in automotive retail in the United
+                        States. At its inception, Wheel Hub focused on selling high-quality cars and accessories through
+                        showrooms spread across major cities in the United States. Within the first five years, Wheel
+                        Hub successfully built a strong reputation as a provider of quality cars with superior customer
+                        service.</p>
+                </div>
+            </div>
+
+            <div class="container2 right-container">
+                <img src="./Assets/pngtree-circle-clipart-yellow-circle-png-image_2381940.jpg" id="circle-l">
+                <div class="text-box">
+                    <h3>2000 - 2010</h3>
+                    <p>Entering the 2000s, WheelHub began to expand its reach by opening more showrooms in strategic
+                        locations. In addition, the company also started adopting new technologies to improve
+                        operational efficiency and customer experience. In 2005, Wheel Hub launched a customer loyalty
+                        program that provides various benefits to loyal customers.</p>
+                </div>
+            </div>
+
+            <div class="container2 left-container">
+                <img src="./Assets/pngtree-circle-clipart-yellow-circle-png-image_2381940.jpg" id="circle">
+                <div class="text-box">
+                    <h3>2010 - 2020</h3>
+                    <p>The next decade became a period of digital transformation for WheelHub. In 2015, Wheel Hub
+                        launched an official website that allows customers to view car catalogs online, check
+                        specifications, and even place orders directly. This move was part of the company's strategy to
+                        redefine the automotive shopping experience by leveraging digital technology.</p>
+                </div>
+            </div>
+
+            <div class="container2 right-container">
+                <img src="./Assets/pngtree-circle-clipart-yellow-circle-png-image_2381940.jpg" id="circle-l">
+                <div class="text-box">
+                    <h3>2020 - now</h3>
+                    <p>In 2020, WheelHub launched a more advanced and responsive online platform. The website is
+                        designed to provide comprehensive information on the cars for sale, showcase the latest
+                        promotions, and provide customer registration services. With five main pages consisting of Home
+                        Page, Promotions Page, Listing Page, All Cars Page, and About Us Page, the site offers easy and
+                        intuitive navigation for users.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="box block block--start-here">
+        <h3 class="block__title">Ready to Start?</h3>
+        <div class="block__content">
+            Where your journey to the perfect car begins.
+        </div>
+        <div class="block__action">
+            <button type="button" class="v-btn v-btn--has-bg theme--light v-size--default">
+                <span class="v-btn__content">Buy a Car</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer-container">
+        <div class="footer">
+            <div class="footer-heading footer-1">
+                <h2>Contact Us</h2>
+                <a href="#">Blog</a>
+                <a href="#">Demo</a>
+                <a href="#">Customers</a>
+                <a href="#">Investors</a>
+                <a href="#">Terms of Service</a>
+            </div>
+            <div class="footer-heading footer-2">
+                <h2>Quick Link</h2>
+                <a href="#">Home</a>
+                <a href="#">Promotion</a>
+                <a href="#">All Cars</a>
+                <a href="#">About Us</a>
+                <a href="#">Register</a>
+            </div>
+            <div class="footer-heading footer-3">
+                <h2>Social Media</h2>
+                <a href="#"><img src="./Assets/facebook.jpg" alt="" id="icon"></a>
+                <a href="#"><img src="./Assets/instagram.jpg" alt="" id="icon"></a>
+                <a href="#"><img src="./Assets/twitter.avif" alt="" id="icon"></a>
+            </div>
+            <div>
+                <h2>Join Us</h2>
+                <input type="email" placeholder="enter your email address" id="footer-email">
+                <button type="button" id="footer-email-btn">Sign Up</button>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>&copy; 2024 WheelHub. All rights reserved</p>
+        </div>
+    </div>
+</body>
+<script src="jquery-3.6.0.min.js"></script>
+<script src="main.js"></script>
+<script src="script.js"></script>
+</html>
