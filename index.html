@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WheelHub</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="website icon" type="png" href="./Assets/logo.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;1,500;1,700&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body>
+    <!-- Header section -->
+    <header class="header">
+        <!-- Menu-Button -->
+        <div id="menu-button" class="fas fa-bars" onclick="showMenu()"></div>
+
+        <a href="#" class="logo"> <span>wHeels</span>Hub</a>
+
+        <nav class="navbar">
+            <a href="#home" id="home-text">Home</a>
+            <a href="ourCars.html">Cars</a>
+            <a href="promotion.html">Promotion</a>
+            <a href="#service">Service</a>
+            <a href="aboutUs.html">About us</a>
+            <a href="register.html">Register</a>
+        </nav>
+
+        <div id="register-btn">
+            <button class="button-login">Log in</button>
+            <i class="fa fa-user"></i>
+        </div>
+    </header>
+
+    <!-- Register Form -->
+    <div class="register-form-container">
+        <!-- 2. Close Page -->
+        <span class="fas fa-times" id="close-register-form"></span>
+
+        <!-- 1 -->
+        <form action="">
+            <h3>Log in</h3>
+            <input type="email" placeholder="Email address" class="box">
+            <input type="password" placeholder="Password" class="box">
+            <p>forget your password <a href="#">Click Here</a></p>
+            <input type="submit" value="Log in" class="button">
+            <p>or login with</p>
+            <div class="buttons">
+                <a href="#" class="button">google</a>
+                <a href="#" class="button">facebook</a>
+            </div>
+            <p>Don't have an account?<a href="register.html" id="register">Register account</a></p>
+        </form>
+    </div>
+
+    <!-- Home page-->
+    <section class="home" id="home">
+        <div class="bg">
+            <img class="home-text1" data-speed="5" src="./Assets/about.png" alt="">
+        </div>
+        <p>Welcome to WheelHub, your premier destination for future cars</p>
+        <a href="ourCars.html" class="button-explore-cars" data-speed="7">Explore cars</a>
+    </section>
+
+    <!-- slider -->
+    <div class="slider">
+        <div class="list">
+            <div class="item">
+                <img src="./Assets/car18.png">
+            </div>
+            <div class="item">
+                <img src="./Assets/car19.webp" alt="">
+            </div>
+            <div class="item">
+                <img src="./Assets/car7.jpeg" alt="">
+            </div>
+            <div class="item">
+                <img src="./Assets/car6.jpeg" alt="">
+            </div>
+        </div>
+
+        <div class="slider-buttons">
+            <button id="prev"> < </button>
+            <button id="next"> > </button>
+        </div>
+        <ul class="dots">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <!-- icons -->
+    <section class="icons-container">
+
+        <div class="icons">
+            <i class="fas fa-home"></i>
+            <div class="content">
+                <h3>150+</h3>
+                <p>branches</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-car"></i>
+            <div class="content">
+                <h3>5370+</h3>
+                <p>cars sold</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-users"></i>
+            <div class="content">
+                <h3>500+</h3>
+                <p>happy clients</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-car"></i>
+            <div class="content">
+                <h3>900+</h3>
+                <p>new car</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Display cars -->
+    <section class="cars" id="cars">
+
+        <h1 class="heading">Featured<span>Cars</span></h1>
+
+        <div class="swiper cars-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="./Assets/car6.jpeg" alt="">
+                    <div class="content">
+                        <h3>new model</h3>
+                        <div class="price"> <span>price: </span> $100.000/- </div>
+                        <p>
+                            new
+                            <span class="fas fa-circle"></span> 2022
+                            <span class="fas fa-circle"></span> automatic
+                            <span class="fas fa-circle"></span> petrol
+                            <span class="fas fa-circle"></span> 183mph
+                        </p>
+                        <a href="#" class="button">check out</a>
+                    </div>
+                </div>
+
+                <div id="box1" class="swiper-slide box ">
+                    <img src="./Assets/car7.jpeg" alt="">
+                    <div class="content">
+                        <h3>new model</h3>
+                        <div class="price"> <span>price: </span> $100.000/- </div>
+                        <p>
+                            new
+                            <span class="fas fa-circle"></span> 2022
+                            <span class="fas fa-circle"></span> automatic
+                            <span class="fas fa-circle"></span> petrol
+                            <span class="fas fa-circle"></span> 183mph
+                        </p>
+                        <a href="#" class="button">check out</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="./Assets/car6.jpeg" alt="">
+                    <div class="content">
+                        <h3>new model</h3>
+                        <div class="price"> <span>price: </span> $100.000/- </div>
+                        <p>
+                            new
+                            <span class="fas fa-circle"></span> 2022
+                            <span class="fas fa-circle"></span> automatic
+                            <span class="fas fa-circle"></span> petrol
+                            <span class="fas fa-circle"></span> 183mph
+                        </p>
+                        <a href="#" class="button">check out</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="./Assets/car7.jpeg" alt="">
+                    <div class="content">
+                        <h3>new model</h3>
+                        <div class="price"> <span>price: </span> $100.000/- </div>
+                        <p>
+                            new
+                            <span class="fas fa-circle"></span> 2022
+                            <span class="fas fa-circle"></span> automatic
+                            <span class="fas fa-circle"></span> petrol
+                            <span class="fas fa-circle"></span> 183mph
+                        </p>
+                        <a href="#" class="button">check out</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="./Assets/car6.jpeg" alt="">
+                    <div class="content">
+                        <h3>new model</h3>
+                        <div class="price"> <span>price: </span> $100.000/- </div>
+                        <p>
+                            new
+                            <span class="fas fa-circle"></span> 2022
+                            <span class="fas fa-circle"></span> automatic
+                            <span class="fas fa-circle"></span> petrol
+                            <span class="fas fa-circle"></span> 183mph
+                        </p>
+                        <a href="#" class="button">check out</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="./Assets/car7.jpeg" alt="">
+                    <div class="content">
+                        <h3>new model</h3>
+                        <div class="price"> <span>price: </span> $100.000/- </div>
+                        <p>
+                            new
+                            <span class="fas fa-circle"></span> 2022
+                            <span class="fas fa-circle"></span> automatic
+                            <span class="fas fa-circle"></span> petrol
+                            <span class="fas fa-circle"></span> 183mph
+                        </p>
+                        <a href="#" class="button">check out</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </section>
+    <!-- Service -->
+    <section class="service" id="service">
+        <h1 class="heading"> our <span>Services</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-car"></i>
+                <h3>car selling</h3>
+                <a href="#" class="button"> read more</a>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-tools"></i>
+                <h3>parts repair</h3>
+                <a href="#" class="button"> read more</a>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-car-crash"></i>
+                <h3>car insurance</h3>
+                <a href="#" class="button"> read more</a>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-battery"></i>
+                <h3>battery replace</h3>
+                <a href="#" class="button"> read more</a>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-gas-pump"></i>
+                <h3>oil change</h3>
+                <a href="#" class="button"> read more</a>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-headset"></i>
+                <h3>24 hours service </h3>
+                <a href="#" class="button"> read more</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <h1 class="heading">Contact<span>Us</span></h1>
+    <section class="contact" id="contact">
+        <div class="row">
+            <iframe class="maps"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.3608154897897!2d106.85831097528066!3d-6.216056993771903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5444122240f%3A0x11edce8b0a2ec42e!2swheels%20garage!5e0!3m2!1sen!2sid!4v1716342510526!5m2!1sen!2sid"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <form action="">
+                <h3>What do you need assistance with? </h3>
+                <input type="text" placeholder="name" class="box">
+                <input type="email" placeholder="email" class="box">
+                <input type="number" placeholder="number" class="box">
+                <textarea placeholder="message" class="box" cols="30" rows="10"></textarea>
+                <input type="submit" value="send message" class="button">
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer-container">
+        <div class="footer">
+            <div class="footer-heading footer-1">
+                <h2>Contact Us</h2>
+                <a href="#">Blog</a>
+                <a href="#">Demo</a>
+                <a href="#">Customers</a>
+                <a href="#">Investors</a>
+                <a href="#">Terms of Service</a>
+            </div>
+            <div class="footer-heading footer-2">
+                <h2>Quick Link</h2>
+                <a href="#">Home</a>
+                <a href="#">Promotion</a>
+                <a href="#">All Cars</a>
+                <a href="#">About Us</a>
+                <a href="#">Register</a>
+            </div>
+            <div class="footer-heading footer-3">
+                <h2>Social Media</h2>
+                <a href="#"><img src="./Assets/facebook.jpg" alt="" id="icon"></a>
+                <a href="#"><img src="./Assets/instagram.jpg" alt="" id="icon"></a>
+                <a href="#"><img src="./Assets/twitter.avif" alt="" id="icon"></a>
+            </div>
+            <div>
+                <h2>Join Us</h2>
+                <input type="email" placeholder="enter your email address" id="footer-email">
+                <button type="button" id="footer-email-btn">Sign Up</button>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>&copy; 2024 WheelHub. All rights reserved</p>
+        </div>
+    </div>
+</body>
+    <!-- Swipper -->
+    <!-- notes: responsive breakpoints-core-class="swiper mySwiper" -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="jquery-3.6.0.min.js"></script>
+<script src="main.js"></script>
+<script src="script.js"></script>
+<script src="slider.js"></script>
+</html>
+
+
+<!-- // hide.show ->Toggle itu ad di tengah2 dua function
+// slideUp.slideDown -> slideToggle
+// fade
+// $('.box').fadeTo(1000, 0.5) -->
