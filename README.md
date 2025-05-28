@@ -13,22 +13,12 @@
 - Custom styling with external fonts and CSS
 
 ---
----
 
 ## 🚀 How to Use
 
 1. Clone or download this repository.
-2. Open `index.html` in your browser.
+2. Open `home.html` in your browser.
 3. Navigate between pages and test the Register form modal.
-
----
-
-## 📌 To Do
-
-- Add backend logic for user registration
-- Implement a booking system for car services
-- Enhance mobile layout
-- Add form validation
 
 ---
 
